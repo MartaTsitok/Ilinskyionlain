@@ -1,0 +1,1 @@
+ const helpText = document.getElementById('help-container').innerHTML = helpText;
