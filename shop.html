@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ilinskyi</title>
+    <link rel="stylesheet" href="./css/practicashop.css">
+    <link rel="stylesheet" href="./bootstrap/bootstrap-4.1.3/dist/css/bootstrap.min.css" >    
+</head>
+<body>
+    <header>
+        <div class="header-wrapper" id="logo">
+            <img src="../IMG/header/header3.png" alt="header">
+        </div>
+        <img src="./IMG/phone-adapt/header-phone.png" alt="heder-phone" class="header-phone">
+        <div class="header-text">
+            <h5>ПИТАЙТЕСЬ РАЗНООБРАЗНО</h5>
+            <button class="headerbtn">Получить скидку</button>
+            <div class="salesblock">
+                <h5>И КОПИТЕ</h5>
+                <h5>до 10%</h5>
+            </div>
+        </div>
+        <h1 class="salesten">СКИДКУ</h1>
+    </header>
+    <div id="current-date"></div>
+     <div class="mainmenu-wrapper">
+        <div class="logo">
+            <a href="#logo">
+            <img src="../IMG/header/logonl.png" alt="logonl"  class="rotating-logo"></a>
+        </div>
+        <div class="burger-catalog">
+             <button class="btn-catalog" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-expanded="false" aria-controls="navbarToggleExternalContent" onclick="this.classList.toggle('active')">
+        <div class="burger-icon">
+                    <span class="line"></span>
+                    <span class="line"></span>
+                    <span class="line"></span>
+                </div>                
+                <span class="catalog-text">Каталог</span>
+            </button>
+            <div class="collapse" id="navbarToggleExternalContent">
+                <div>
+                    <ul class="list-unstyled">
+                        <li>Акции
+                            <div class="submenu">
+                                <p>Подкатегория 1</p>
+                                <p>Подкатегория 2</p>
+                            </div>
+                        </li>
+                        <li>Популярное
+                            <div class="submenu">
+                                <p>Подкатегория 1</p>
+                                <p>Подкатегория 2</p>
+                            </div>
+                        </li>
+                        <li>Супермаркет
+                            <div class="submenu">
+                                <h3>Супермаркет</h3>
+                                <p>Вода и напитки</p>
+                                <p>Молоко,масло и яйца</p>
+                                <p>Снэки и сухофрукты</p>
+                                <p>Кофе, чай и сладости</p>
+                                <p>Макароны и крупы</p>
+                                <p>Хлеб и выпечка</p>
+                            </div>
+                        </li>
+                        <li>Кулинария
+                            <div class="submenu">
+                                <p>Подкатегория 1</p>
+                                <p>Подкатегория 2</p>
+                            </div>
+                        </li>
+                        <li>Заморозка
+                            <div class="submenu">
+                                <p>Подкатегория 1</p>
+                                <p>Подкатегория 2</p>
+                            </div>
+                        </li>
+                        <li>Другое
+                            <div class="submenu">
+                                <p>Подкатегория 1</p>
+                                <p>Подкатегория 2</p>
+                            </div>
+                        </li>
+                        <li>Продукция от "Ильинского"
+                            <div class="submenu">
+                                <p>Подкатегория 1</p>
+                                <p>Подкатегория 2</p>
+                            </div>
+                        </li>                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    <div class="search-form" >
+        <input id="searchForm" type="text" placeholder="Начать поиск" class="form-control" style="max-width: 300px;">
+        <img src="../IMG/main-menu/search.png" alt="search" class="search-icon" style="width:24px; cursor:pointer;">
+        <img src="./IMG/phone-adapt/searchadopt.png" alt="searshadopt" class="searshadopt">
+    </div>
+        <div class="way-to-get">
+            <div class="wayrects">
+                <div class="rectyell"></div>
+                <div class="rectorang"></div>
+            </div>
+            <div class="compassmsk">
+                <img src="../IMG/main-menu/compass 1.png" alt="compass">
+                <h1>МСК</h1>
+            </div>
+            <div class="choose-self">
+                <h2 class="choose">Выберите способ получения</h2><!--размер400-->
+                <h2 class="self">Доставка или самовывоз</h2><!--размер700-->
+            </div>
+        </div>
+        <div class="buttonssymbols">
+            <div class="like-product-button">
+                <button><img src="../IMG/main-menu/heart.png" alt="heart"></button>
+            </div>
+        <div class="myaccount-button">
+        <button id="openModal"><img src="../IMG/main-menu/account.png" alt="account"></button>
+        </div>
+<div id="modal" class="modal" style="display:none;">
+    <div class="modal-content">
+        <span class="close" data-close="modal">&times;</span>
+        <h2>Авторизуйтесь</h2>
+        <form id="registrationForm">
+            <div class="registrationForm">
+                <div class="accontprom">
+                    <img src="./IMG/phone-adapt/acoountproc.png" alt="Иконка пользователя" class="img-fluid"><br><br>
+                    <label for="username">Покупайте продукты со скидкой</label><br>                
+                </div>
+                <div class="promodelivery">
+                    <img src="./IMG/phone-adapt/accountdelivery.png" alt="Иконка почты" class="img-fluid"><br><br>
+                    <label for="email">Заказывайте товары с доставкой день в день</label><br>
+                </div>
+                <div class="accountlider">
+                    <img src="./IMG/phone-adapt/accountlider.png" alt="Иконка пароля" class="img-fluid"><br><br>
+                    <label for="password">Узнавайте первыми и участвуйте в акциях</label><br>    
+                </div>
+                <button type="button" id="openModal2">Войти по номеру телефона</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+<!-- Второе модальное окно -->
+<div id="modal2" class="modal" style="display:none;">
+    <div class="modal-content">
+        <span class="close" data-close="modal2">&times;</span>
+        <h2>Введите номер телефона</h2>
+        <form id="registrationForm2">
+            <div class="registrationForm">
+                <div class="form-group">
+                    <label for="phone">Ваш телефон:</label>
+                    <input type="text" id="phone" name="phone" class="phone-input" placeholder="+7 (___) ___-__-__" required>
+                </div>
+                <div class="radio-group">
+                    <label>
+                        <input type="radio" name="userType" value="customer" checked>
+                        Соглашаюсь с политикой конфиденциальности
+                    </label>
+                    <label>
+                        <input type="radio" name="userType" value="seller">
+                        Соглашаюсь получать новости и специальные предложения
+                    </label>
+                </div>
+                <button type="button" id="backToFirstModal">Получить код по SMS</button>
+            </div>
+        </form>
+    </div>
+</div>
+           <div class="chart">
+                <button><img src="../IMG/main-menu/shopping-cart 1.png" alt="shopping-cart" ><h4>Корзина</h4></button>
+            </div>
+        </div>
+    </div>
+
+<div class="sections-wrapper">
+    <a href="#supermarket" class="sectionsbtn">
+        <img src="../IMG/main-menu/apple.png" alt="apple">Супермаркет
+    </a>
+    <a href="#cooking" class="sectionsbtn">
+        <img src="../IMG/main-menu/cooking.png" alt="cooking">Кулинария
+    </a>
+    <a href="#freezing" class="sectionsbtn">
+        <img src="../IMG/main-menu/freez.png" alt="freez">Заморозка
+    </a>
+    <a href="#another" class="sectionsbtn">
+        <img src="../IMG/main-menu/another.png" alt="another">Другое
+    </a>
+    <a href="#promo" class="sectionpromobtn">
+        <img src="../IMG/main-menu/promotions.png" alt="promotions">Акции
+    </a>
+    <a href="#places" class="sectionsbtn">
+        <img src="../IMG/main-menu/place.png" alt="place">Магазины
+    </a>
+</div>
+    
+    <div class="main-slider">
+        <div class="slider-main">
+        <!-- Большой слайд -->
+        <img src="../IMG/main-menu/Rectangle 12614.png" alt="Большой слайд" class="main-slide img-fluid">
+            <div class="slider-text">
+                <h3>Начните день с вкусной выпечки из нашей кулинарии</h3>
+                <button class="main-slider-btn">Перейти к покупкам</button>
+                <button class="tobyeadopt">К покупкам</button>
+            </div>
+        </div>
+        <div class="slider-side">
+            <!-- Верхний маленький блок -->
+            <div class="side-block cashback">
+                <img src="../IMG/slider/cashback.png" alt="Кэшбэк" class="img-fluid">
+            </div>
+            <!-- Нижний маленький блок -->
+            <div class="side-block review">
+                <img src="../IMG/slider/comment.png" alt="Отзыв" class="img-fluid">
+            </div>
+        </div>
+    </div>
+    <div class="menuadapt">
+            <img class="catalog" src="./IMG/phone-adapt/catalog.png" alt="catalog">
+            <img class="promoadaptphone" src="./IMG/phone-adapt/promoadapt.png" alt="promoadapt">
+            <img class="chartadapt" src="./IMG/phone-adapt/chartadopt.png" alt="chartadapt">
+            <img class="likeadopt" src="./IMG/phone-adapt/likeadopt.png" alt="likeadopt">
+            <img class="profileadopt" src="./IMG/phone-adapt/myprofile.png" alt="myprofile">
+    </div>
+    <div class="cardssales-container">
+        <h1 class="product searchable" id="searchResults">СКИДКИ</h1>
+        <button class="view-all-btn">Смотреть все <img src="../IMG/main-menu/salesarrow.png" alt="salesarrow"></button>
+        <button class="view-all-btn-adopt"><img src="./IMG/phone-adapt/arrowpromo.png" alt="arrowpromo"></button>
+        <div class="sales-arrows">
+            <div class="backgarrowssales"></div>
+                <button class="arrow-btn sales-l" aria-label="Previous">
+                    <img src="../IMG/slider/sales-l.png" alt="Влево" />
+                </button>
+                <button class="arrow-btn sales-r" aria-label="Next">
+                    <img src="../IMG/slider/sales-r.png" alt="Вправо" />
+                </button>
+            </div>
+        </div>
+    </div>
+<div class="cards-row">
+    <div class="cardssalesgranola">
+        <img src="../IMG/SALES/Granolaprocent.png" alt="Granolaprocent" />
+        <div class="weight">
+            <h3>В наличии 2 шт</h3>
+            <h3>99,90 грн</h3>
+        </div>
+        <div class="card-body">
+            <h3 class="card-title">Гранола Мюсли Bionova ягодные запечённые хрустящие, 400г</h3>
+            <div class="tochart">
+                <h2 class="card-subtitle">99,90 грн</h2>
+                <a href=""data-id="Granolasales"></a>
+            </div>
+            <h3 class="card-previous-price"><s>129,00 грн</s></h3>
+        </div>
+    </div>
+    <div class="cardssalesgranola">
+        <img src="../IMG/SALES/juicesales.png" alt="Juice" />
+        <div class="weight">
+            <h3>В наличии 3 шт</h3>
+            <h3>70,90 грн</h3>
+        </div>
+        <div class="card-body">
+            <h3 class="card-title">Сок Ideas тыквенно-апельсиновый, 1л</h3>
+            <div class="tochart">
+                <h2 class="card-subtitle">70,90 грн</h2>
+                <a href=""></a>
+            </div>
+            <h3 class="card-previous-price"><s>89,00 грн</s></h3>
+        </div>
+    </div>
+    <div class="cardssalesgranola">
+        <img src="../IMG/SALES/Granolasales.png" alt="Granolaprocent" />
+        <div class="weight">
+            <h3>В наличии 2 шт</h3>
+            <h3>99,90 грн</h3>
+        </div>
+        <div class="card-body">
+            <h3 class="card-title">Гранола Мюсли Bionova ягодные запечённые хрустящие, 400г</h3>
+            <div class="tochart">
+                <h2 class="card-subtitle">99,90 грн</h2>
+                <a href="" data-id="Granolasales" ></a>
+            </div>
+            <h3 class="card-previous-price"><s>129,00 грн</s></h3>
+        </div>
+    </div>
+    <div class="cardssalesgranola">
+        <img src="../IMG/SALES/juicesales.png" alt="Granolaprocent" />
+        <div class="weight">
+            <h3>В наличии 2 шт</h3>
+            <h3>99,90 грн</h3>
+        </div>
+        <div class="card-body">
+            <h3 class="card-title">Гранола Мюсли Bionova ягодные запечённые хрустящие, 400г</h3>
+            <div class="tochart">
+                <h2 class="card-subtitle">99,90 грн</h2>
+                <a href="" data-id="juicesales"></a>
+            </div>
+            <h3 class="card-previous-price"><s>129,00 грн</s></h3>
+        </div>
+    </div>
+    <div class="cardssalesgranola">
+        <img src="../IMG/SALES/Granolasales.png" alt="Juice" />
+        <div class="weight">
+            <h3>В наличии 3 шт</h3>
+            <h3>70,90 грн</h3>
+        </div>
+        <div class="card-body">
+            <h3 class="card-title">Сок Ideas тыквенно-апельсиновый, 1л</h3>
+            <div class="tochart">
+                <h2 class="card-subtitle">70,90 грн</h2>
+                <a href="" data-id="Granolasales"></a>
+            </div>
+            <h3 class="card-previous-price"><s>89,00 грн</s></h3>
+        </div>
+    </div>
+</div>
+<div class="sectionscards">
+        <div class="supermarket">
+            <h1 id="supermarket">СУПЕРМАРКЕТ</h1>
+            <button class="view-all-btn">Смотреть все <img src="../IMG/main-menu/salesarrow.png" alt="salesarrow"></button>
+        </div>
+        <div class="cardssupermarket">
+            <div class="row row-cols-4  super-card-container justify-content-center ">
+                <div class=" supergcard">
+                    <p>Вода и напитки</p>
+                    <img src="../IMG/SUPERMARKET/wateranddrinking.png" alt="wateranddrinking" />
+                    </div>
+                    <div class=" supergcard">
+                    <p>Молоко, масло и яйца </p>
+                    <img src="../IMG/SUPERMARKET/milk.png" alt="milk" />
+                    </div>
+                    <div class=" supergcard">
+                    <p>Снэки и сухофрукты</p>
+                    <img src="../IMG/SUPERMARKET/chips.png" alt="chips" />
+                    </div>
+                    <div class=" supergcard">
+                    <p>Кофе,чай и сладости</p>
+                    <img src="../IMG/SUPERMARKET/coffee.png" alt="coffee"/>
+                    </div>
+                    <div class=" supergcard">
+                    <p>Макароны и крупы</p>
+                    <img src="../IMG/SUPERMARKET/spaghetties-wooden-platter.png" alt="spaghetties-wooden-platter" />
+                    </div>
+                    <div class=" supergcard">
+                    <p>Хлеб и выпечка</p>
+                    <img src="../IMG/SUPERMARKET/bread.png" alt="bread" />
+                    </div>
+                    <div class="supergcard">
+                    <p>Масло,Соусы и специи</p>
+                    <img src="../IMG/SUPERMARKET/oil.png" alt="oil" />
+                    </div>
+                    <div class="supergcard">
+                    <p>Консервы и соления</p>
+                    <img src="../IMG/SUPERMARKET/conserves.png" alt="conserves" />
+                </div>
+        </div>
+    </div>
+</div>
+<div class="cooking">
+    <div class="cooking-head">
+        <h1 id="cooking">КУЛИНАРИЯ</h1>
+        <button class="view-all-btn">Смотреть все<img src="./IMG/phone-adapt/arrowpromo.png" alt=""></button>
+    </div>
+    <div class="cooking-card-container">
+        <div class="cookingcard">
+            <p>Выпечка</p>
+            <img src="../IMG/COOKING/cruassain.png" alt="Выпечка" class="img-fluid" />
+        </div>
+        <div class="cookingcard">
+            <p>Пиццы</p>
+            <img src="../IMG/COOKING/pizza.png" alt="Пиццы" class="img-fluid" />
+        </div>
+        <div class="cookingcard">
+            <p>Гриль-меню</p>
+            <img src="../IMG/COOKING/chicken.png" alt="Гриль-меню" class="img-fluid" />
+        </div>
+        <div class="cookingcard">
+            <p>Свежее мясо</p>
+            <img src="../IMG/COOKING/meat.png" alt="Свежее мясо" class="img-fluid" />
+        </div>
+        <div class="cookingcard">
+            <p>Салаты</p>
+            <img src="../IMG/COOKING/salad.png" alt="Салаты" class="img-fluid" />
+        </div>
+        <div class="cookingcard">
+            <p>Супы</p>
+            <img src="../IMG/COOKING/soup.png" alt="Супы" class="img-fluid" />
+        </div>
+        <div class="cookingcard">
+            <p>Горячие блюда</p>
+            <img src="../IMG/COOKING/macarons.png" alt="Горячие блюда" class="img-fluid" />
+        </div>
+        <div class="cookingcard">
+            <p>Десерты</p>
+            <img src="../IMG/COOKING/tartaletki.png" alt="Десерты" class="img-fluid" />
+        </div>
+    </div>
+</div>
+
+<div class="freezing" id="freezing">
+            <h1>ЗАМОРОЗКА</h1>
+            <button class="view-all-btn">Смотреть все <img src="../IMG/main-menu/salesarrow.png" alt="salesarrow"></button>
+        </div>
+<div class="another">
+            <h1>ДРУГОЕ</h1>
+            <button class="view-all-btn">Смотреть все <img src="../IMG/main-menu/salesarrow.png" alt="salesarrow"></button>
+</div>
+
+<div class="promo" id="promo">
+    <div class="promo-head">
+        <h1>АКЦИИ</h1>
+        <button class="view-all-btn">
+            Смотреть все <img src="../IMG/main-menu/salesarrow.png" alt="salesarrow">
+        </button>
+    </div>
+    <div class="promocards"  id="carousel">
+        <div class="promo-slide cookingpromo">
+            <h3>Сделай предзаказ в кулинарии со скидкой</h3>
+            <img src="../IMG/PROMO/promosoup1.png" alt="promosoup1"> 
+        </div>
+        <div class="promo-slide colacards">
+            <h3>Праздник к нам приходит</h3>
+            <h4>15% скидка</h4>
+            <img src="../IMG/PROMO/promocola2.png" alt="promocola2"> 
+        </div>
+        <div class="promo-slide salesthird">
+            <h3>Скидка на третий товар в корзине «Чистая линия»</h3>
+            <img src="../IMG/PROMO/promocream3.png" alt="promocola2"> 
+        </div>
+        <div class="promo-slide salesfour">
+            <h3>Комбо-набор 3 пиццы за 1500 ₽</h3>
+            <h4>trio1500</h4>
+            <img src="../IMG/PROMO/pronopizzas4.png" alt="promocola2"> 
+        </div> 
+        <div class="promo-slide cookingpromo">
+            <h3>Сделай предзаказ в кулинарии со скидкой</h3>
+            <img src="../IMG/PROMO/promosoup1.png" alt="promosoup1"> 
+        </div>
+        <div class="promo-slide colacards">
+            <h3>Праздник к нам приходит</h3>
+            <h4>15% скидка</h4>
+            <img src="../IMG/PROMO/promocola2.png" alt="promocola2"> 
+        </div>
+        <div class="promo-slide salesthird">
+            <h3>Скидка на третий товар в корзине «Чистая линия»</h3>
+            <img src="../IMG/PROMO/promocream3.png" alt="promocola2"> 
+        </div>
+        <div class="promo-slide salesfour">
+            <h3>Комбо-набор 3 пиццы за 1500 ₽</h3>
+            <h4>trio1500</h4>
+            <img src="../IMG/PROMO/pronopizzas4.png" alt="promocola2"> 
+        </div>                                           
+    </div>
+</div>
+<div class="delivery-container">
+  <div class="adress-map-container">
+    <div class="row flex-map">
+      <div class="delivery-about">
+        <h1 id="places">ДОСТАВКА И ОПЛАТА</h1>
+        <h3 class="reddelivery">Зоны и доставки</h3>
+        <p>Доставка осуществляется в районе ЖК «Ильинские Луга»
+          (Харьковська обл., Красногорск, пос. Ильинское-Усово, ул. Заповедная) и ЖК «Новая Рига» 
+          (Харьковська обл., Красногорск, д. Глухово, ул. Рублевское Предместье)
+        </p>
+        <h3 class="reddelivery">25 минут</h3>
+        <p>Доставка 25 минут. Принимаем заказы с 7:00 до 23:00</p>
+        <h3 class="reddelivery">300грн</h3>
+        <p>Минимальная сумма бесплатной доставки с учетом скидок.
+          Иначе стоимость доставки 50 грн
+        </p>
+        <h2 class="reddelivery">Оплата</h2>
+        <p>При оформлении заказа вы можете выбрать удобный для вас способ расчета</p>
+        <p class="note">Изображения продуктов могут отличаться от продуктов в заказе.</p>
+      </div>
+      <div class="mapdelivery">
+        <h2 class="reddelivery">Карта доставки</h2>
+        <iframe class="imgdelivery" src="https://yandex.ru/map-widget/v1/?um=constructor%3A7e9e803f61a1e6d2002b1e0a41295a38c8b0a2d3c303bae01a4acabfd12b561d&amp;source=constructor" width="100%" height="278" frameborder="0"></iframe>
+      </div>
+    </div>
+  </div>
+</div>
+
+    <div class="freedelivery">
+        <div class="reddeliveryrect">
+            <h1>БЕСПЛАТНАЯ ДОСТАВКА + СКИДКА 10%</h1>
+        </div>
+        <div class="freetext-container">
+            <div class="firstdelivery">
+                <h4>первого заказа</h4>
+            </div>
+            <div class="cookingdelivery">
+                <h4>на заказы кулинарии</h4>
+            </div>
+        </div>
+        <div class="button-promocode">
+            <a href="#">Получить промокод</a>
+        </div>
+    </div>
+
+    <div class="avoluate">
+        <div class="rect">
+            <div class="avoulatestore">
+                <h1>ОЦЕНИТЕ МАГАЗИН</h1>
+                <h5>Поделитесь впечатлениями о заказе и помогите сделать нас лучше</h5>
+            </div>
+            <div class="avocado">
+                <img class="avocadosimg" src="../IMG/DELIVERY/sheet.png" alt="sheet">
+                <img class="avocadoslists" src="../IMG/DELIVERY/avocados.png" alt="avocados">
+            </div>
+            <div class="put">
+                <div class="starsavoluate">
+                    <img src="../IMG/main-menu/star.png" alt="star">
+                    <img src="../IMG/main-menu/star.png" alt="star">
+                    <img src="../IMG/main-menu/star.png" alt="star">
+                    <img src="../IMG/main-menu/star.png" alt="star">
+                    <img src="../IMG/DELIVERY/graystar.png" alt="graystar">
+                </div>
+                <a href="#">Оставить отзыв</a>
+            </div>
+        </div>
+    </div>
+<div id="cookie-consent">
+    Мы используем файлы cookies для улучшения работы сайта.
+<button id="accept-cookies">Принять</button>
+    </div>
+<div class="container-fluid bg-danger text-white py-4">
+  <div class="container">
+    <div class="row">
+      <!-- Колонки футера-->
+      <div class="col-12 col-lg-3 mb-4 mb-lg-0">
+        <h5>Ильинский онлайн</h5>
+        <ul class="list-unstyled">
+            <li><a href="#cooking">Кулинария</a></li>
+            <li><a href="#">Супермаркет</a></li>
+            <li><a href="#">Заморозка</a></li>
+            <li><a href="#">Другое</a></li>
+        </ul>
+      </div>
+      <div class="col-12 col-lg-3 mb-4 mb-lg-0">
+        <h5>Ильинский клуб</h5>
+    <ul class="list-unstyled">
+    <li><a href="#">Акции</a></li>
+    <li><a href="#">Доставка и оплата</a></li>
+    <li><a href="#">Программа лояльности</a></li>
+    <li><a href="#">Политика конфиденциальности</a></li>
+    <li><a href="#">Вакансии</a></li>
+    </ul>
+      </div>
+      <div class="col-12 col-lg-3 mb-4 mb-lg-0">
+        <div class="d-flex align-items-center mb-2">
+          <img src="../IMG/FOOTER/phone-call.png" alt="phone" style="width:20px;" class="me-2">
+          <div>
+            <div>+38 (000) 49-09-99</div>
+            <small>Ежедневно с 09:00 до 21:00</small>
+          </div>
+        </div>
+        <div class="d-flex align-items-center mb-2">
+          <img src="../IMG/FOOTER/compassfooter.png" alt="compass" style="width:20px;" class="me-2">
+          <span><a href="#">Адреса магазинов</a></span>
+        </div>
+        <div class="d-flex align-items-center mb-2">
+          <img src="../IMG/FOOTER/inst.png" alt="inst" style="width:20px;" class="me-2">
+          <span><a href="#">Следите за нами</a></span>
+        </div>
+        <div class="d-flex align-items-center">
+          <img src="../IMG/FOOTER/mail.png" alt="mail" style="width:20px;" class="me-2">
+          <span><a href="#">Обратная связь</a></span>
+        </div>
+      </div>
+      <div class="col-12 col-lg-3">
+        <h5>Подпишитесь на вкусные и полезные новости</h5>
+        <form class="d-flex mb-2" action="email" method="post">
+          <input type="email" name="email" class="form-control me-2" placeholder="Введите ваш email" required>
+          <button type="submit" class="btn btn-outline-light subscribe-btn">Подписаться</button>
+        </form>
+        <div class="form-check text-white mb-3">
+          <input class="form-check-input" type="radio" id="agree" required>
+          <label class="form-radio-label" for="agree">
+            Согласен с политикой конфиденциальности
+          </label>
+        </div>
+      </div>
+    </div>
+    <hr class="border-light mt-4">
+    <div class="d-flex flex-column flex-lg-row align-items-center justify-content-between col-12 small text-start">
+    <!-- Левая часть: два текста в одну линию -->
+    <div class="d-flex align-items-center">
+        <div>© 2022 Ильинский онлайн — доставка товаров и продуктов на дом</div>
+        <div class="ms-4">Информация на сайте не является публичной офертой</div>
+    </div>
+    <div class="d-flex align-items-center mt-3 mt-lg-0">
+        <img src="../IMG/FOOTER/cards.png" alt="cards" style="width:150px; height:26px;">
+        <div class="d-flex align-items-center ms-3">
+        <span class="me-2">Разработано в</span>
+        <img src="../IMG/FOOTER/gazinov.png" alt="gazinov" style="height:18px;">
+        </div>
+    </div>
+    </div>
+  </div>
+  <a id="scrollToTop" href="#" title="Вернуться к началу" style="display: none;">↑</a>
+</div>
+<button id="chat-toggle" style="position: fixed; bottom: 20px; right: 20px; z-index: 1000; padding: 10px 20px; border-radius: 25px; background-color: #FFA900; color: white; border: none; cursor: pointer;">
+    Помощник
+</button>
+<div id="chat-container" style="display: none; position: fixed; bottom: 70px; right: 20px; width: 300px; max-height: 400px; background: white; border: 2px solid #FFA900; border-radius: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.2); z-index: 1000; flex-direction: column; font-family: Arial, sans-serif;">
+    <div id="chat-header" style="background: #FFA900; color: white; padding: 10px; border-radius: 8px 8px 0 0; font-weight: bold;">
+        Помощник
+        <button id="chat-close" style="float: right; background: transparent; border: none; color: white; font-weight: bold; cursor: pointer;">×</button>
+    </div>
+    <div id="chat-messages" style="padding: 10px; overflow-y: auto; flex-grow: 1; height: 250px; border-bottom: 1px solid #ddd;"></div>
+    <form id="chat-form" style="display: flex; padding: 10px;">
+        <input type="text" id="chat-input" placeholder="Введите сообщение..." style="flex-grow: 1; padding: 8px; border: 1px solid #ccc; border-radius: 4px;" autocomplete="off" />
+        <button type="submit">Send</button>
+    </form>
+</div>
+<div id="help-container"></div>
+<script src="./JS/cookie.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="./bootstrap/bootstrap-4.1.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="./JS/slidecards.js"></script>
+<script src="./JS/scroll.js"></script>
+<script src="./JS/chat.js"></script>
+<script src="./JS/carusel.js"></script>
+<script src="./JS/date.js"></script>
+<script src="./JS/search.js"></script>
+<script src="./JS/logo.js"></script>
+<script src="./JS/help.js"></script>
+<script src="./JS/promocars.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="./JS/modalopen2.JS"></script>
+<script src="./JS/jquery.js"></script>
+</body>
+</html>
